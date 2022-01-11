@@ -1,5 +1,3 @@
-   // char my_name[8];
-
-    // strcpy(my_name,"Frank");
-
-    // cout << my_name << endl;
+ // cout << "2nd player enter your name here: ";
+        // getline(cin, second_player_name);
+        // cout << first_player_name << " " <<second_player_name << endl;
