@@ -23,7 +23,7 @@ int main(){
     print(array2,array2_size);
 
     int* result = apply_all(array1,array1_size, array2,array2_size);
-    constexpr size_t result_size = array1_size * array2_size;
+    size_t result_size = array1_size * array2_size;
 
     cout << "Result: ";
     print(result,result_size);
