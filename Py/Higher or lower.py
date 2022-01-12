@@ -335,8 +335,6 @@ data = [
     }
 ]
 
-print(logo)
-
 def game():
     """Plays a game of higher and lower."""
     points = 0
@@ -381,4 +379,12 @@ def game():
             print(f"Your final score: {points}")
             should_continue = False
 
-game()       
+wanna_play = True
+while wanna_play:
+    start = input("Do you want to play a game of Higher-or-Lower? Type 'y' or 'n': ")
+    if start == 'y':
+        os.system("cls")
+        print(logo)
+        game()
+    else:
+        print("Goodbye then!")           
