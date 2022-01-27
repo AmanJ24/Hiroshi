@@ -1,8 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <stdlib.h>
-
-
 using namespace std;
 
 
@@ -39,7 +36,6 @@ vector <vector<char>>x_o{
     {'7',     '8',      '9'},
 };
 
-    system("CLS");
     cout << "Do you want to play Multiplayer or with bot: " << endl;
     cout << "Press S to play Alone || Press M to player multiplayer:  ";
     cin>>single_or_multiplayer;
@@ -48,7 +44,6 @@ vector <vector<char>>x_o{
     cout << "Press numeric keys to play this game: " << endl;
 
 
-    system("CLS");
 
     tic_tac_toe_box(x_o);
     if(single_or_multiplayer == 'M' || single_or_multiplayer == 'm')
@@ -212,7 +207,6 @@ bool if_X(vector<vector<char>> &vector_ptr){
                 
     }
             
-    system("CLS");
     x_or_o = false;
     return x_or_o;
         
@@ -278,7 +272,6 @@ bool if_O(vector<vector<char>> &vector_ptr){
         vector_ptr[2][2] = 'O';
                 
     }
-    system("CLS");    
     x_or_o = true;
         
     return x_or_o;
