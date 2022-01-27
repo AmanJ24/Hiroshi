@@ -72,19 +72,3 @@ elif(new == "East"):
         print("Invalid step")
 else:
     print("Invalid step")                                         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

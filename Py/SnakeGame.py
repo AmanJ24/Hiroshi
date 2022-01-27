@@ -1,7 +1,4 @@
 from turtle import Screen, Turtle
-from datetime import date, datetime, time, timedelta
-
-dt = datetime.combine(date.today(), time(23, 55)) + timedelta(minutes=30)
 
 screen = Screen()
 screen.setup(width=600, height=600)
@@ -22,8 +19,7 @@ for i in range(0, 3):
 game_is_on = True
 while game_is_on:
     for seg in segments:
-        seg.forward(0.1) * dt
+        seg.forward(0.1)
         screen.update()
-
 
 screen.exitonclick()
