@@ -3,19 +3,28 @@
 using namespace std;
 class pro{
     public:
-
     int something = 1;
     int xp = 1;
 
+    friend bool operator==(pro& other, pro& other1){
+        cout << "Something good is going to happen!" << endl;
+        return true;
+    }
     pro(){
 
     }
 
-    pro operator+(const pro& other){
+    bool operator+(const pro& other){
         this->something = other.something;
         this->xp = other.xp;
-        return *this;
+        return true;
     }
+    // bool operator==(const pro& other){
+        // if(this->something == other.something)return 1;
+        // else{
+            // return 0;
+        // }
+    // }
     void talk(){
         cout << "HELLO manveer" << endl;
     }
@@ -23,9 +32,8 @@ class pro{
 
 int main(){
     pro manveer;
+
     pro sakshi;
 
-    manveer.something = 1024;
-
-    sakshi = sakshi.operator+(manveer);
-}
+    manveer == sakshi;
+}   
