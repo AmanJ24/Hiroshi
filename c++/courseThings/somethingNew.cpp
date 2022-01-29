@@ -42,5 +42,5 @@ int main(){
 
     manveer.something = 100;
     sakshi.something = 100;
-    sakshi = sakshi + manveer;
+
 }
