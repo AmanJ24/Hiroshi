@@ -3,13 +3,10 @@
 using namespace std;
 
 class pro{
-    private:
-    int something;
-    int health;
     public:
-
+    int first_number;
+    int second_number;
 };
 int main(){
-    cout << "Hello World" << endl;
-    return 0;
+	return 0;
 }
