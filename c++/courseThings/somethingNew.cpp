@@ -2,11 +2,20 @@
 
 using namespace std;
 
+
 class pro{
+
     public:
-    int first_number;
-    int second_number;
+    int health;
+    int xp;
+
+
+    void talk(string sentence){
+        cout << sentence << endl;
+    }
 };
 int main(){
-	return 0;
+
+    cout << "Hello World" << endl;
+    return 0;
 }
