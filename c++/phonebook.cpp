@@ -11,7 +11,8 @@ vector <string> name;
 // functions declare here;
 void if_1();
 void if_2();
-void if_3();
+void if_3()	std::cout << xp << std::endl;
+;
 
 
 int main(){
