@@ -1,4 +1,5 @@
 #include <iostream> 
+#include <vector>
 using namespace std;
 
 class pro{
@@ -10,6 +11,9 @@ class pro{
     pro():infinite_health{0},infinite_xp{0}
     {
 
+    }   
+    pro(int value):infinite_health{value}{
+
     }
 
     pro& operator=(const pro& other){
@@ -18,7 +22,9 @@ class pro{
         return *this;
     }
 
-
+    static void function_to_deposit(vector <pro>& other, pro value){
+        other.push_back(value);
+    }
     void add(int y, int lol){
         this->infinite_xp = y;
         this->infinite_health = lol;
@@ -47,16 +53,11 @@ class noob : public pro{
         cout << this->infinite_xp << " " << this->infinite_health<< endl;
     }
 };
+
+
+class intermidiate : public noob{
+    public:
+};
 int main(){
-    // pro manveer;
 
-    // manveer.infinite_health = 100;
-    // manveer.infinite_xp = 230;
-
-    // cout << manveer;
-    // cin>>manveer;
-    // cout << manveer;
-
-    noob someone;
-    someone.add(100,200);
 }
