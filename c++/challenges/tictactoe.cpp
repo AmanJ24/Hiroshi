@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <stdlib.h>
 using namespace std;
 
 
@@ -39,7 +40,7 @@ vector <vector<char>>x_o{
     cout << "Do you want to play Multiplayer or with bot: " << endl;
     cout << "Press S to play Alone || Press M to player multiplayer:  ";
     cin>>single_or_multiplayer;
-
+    system("CLS");
 
     cout << "Press numeric keys to play this game: " << endl;
 
@@ -206,7 +207,8 @@ bool if_X(vector<vector<char>> &vector_ptr){
         vector_ptr[2][2] = 'X';
                 
     }
-            
+    
+    system("CLS");
     x_or_o = false;
     return x_or_o;
         
@@ -272,6 +274,7 @@ bool if_O(vector<vector<char>> &vector_ptr){
         vector_ptr[2][2] = 'O';
                 
     }
+    system("CLS");
     x_or_o = true;
         
     return x_or_o;
