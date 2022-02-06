@@ -52,7 +52,7 @@ void print_introduction(int level_difficulty){
 
 int main(){
     int level_difficulty = 1;
-    int max_difficulty = 5;
+    int max_difficulty = 11;
 
 
     while(level_difficulty <= max_difficulty){
