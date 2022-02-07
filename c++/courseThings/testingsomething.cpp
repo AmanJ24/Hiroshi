@@ -1,24 +1,38 @@
 #include <iostream>
-#include <vector>
 using namespace std;
+
 
 class pro{
     public:
-    int health;
     virtual void talk(){
-        cout << "Pro is here" << endl;
+        cout << "Hello , I am Pro" << endl;
+    }
+    
+};
+
+class noob : virtual public pro{
+    public:
+    void yo(){
+        cout << "Hello, I am noob" << endl;
     }
 };
 
-class noob: public pro{
+
+class intermidiate : virtual public pro{
     public:
-    virtual void talk(){
-        cout << "noob is here" << endl;
+    void hi(){
+        cout << "Hello , I am intermidiate" << endl;
+    }
+};
+
+
+class lol : public noob, public intermidiate{
+    public:
+    void talk(){
+        noob::talk();
     }
 };
 int main(){
-    pro* manveer = new noob;
-    manveer->talk();
-
     return 0;
 }
+
