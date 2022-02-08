@@ -1,38 +1,22 @@
 #include <iostream>
 using namespace std;
 
-
 class pro{
     public:
-    virtual void talk(){
-        cout << "Hello , I am Pro" << endl;
-    }
-    
-};
-
-class noob : virtual public pro{
-    public:
-    void yo(){
-        cout << "Hello, I am noob" << endl;
+    virtual void print(ostream& out) const = 0;
+    friend void operator<<(ostream& out, pro& lol){
+        lol.print(out);
     }
 };
 
-
-class intermidiate : virtual public pro{
+class noob : public pro{
     public:
-    void hi(){
-        cout << "Hello , I am intermidiate" << endl;
-    }
-};
-
-
-class lol : public noob, public intermidiate{
-    public:
-    void talk(){
-        noob::talk();
+    virtual void print(ostream& out) const override{
+        out << "Hello World" << endl;
     }
 };
 int main(){
+    noob manveer;
+    cout << manveer;
     return 0;
 }
-
