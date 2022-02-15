@@ -1,10 +1,11 @@
 #include <iostream>
 #include <fstream>
+#include <iomanip>
 
 using namespace std;
 
-
 int main(){
-   cout << "Hello world" << endl;
+   int num = 255;
+
    return 0;
 }
