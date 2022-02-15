@@ -1,5 +1,1 @@
-﻿namespace Trying{
-
-    class lol {
-    }
-}
+﻿
