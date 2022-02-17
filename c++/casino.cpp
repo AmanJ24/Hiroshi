@@ -4,11 +4,11 @@
 #include <time.h>
 #endif
 
-#ifdef linux
+// #ifdef linux
 #include <iostream>
 #include <stdlib.h>
 #include <time.h>
-#endif
+// #endif
 using namespace std;
 
 void clear_screen();

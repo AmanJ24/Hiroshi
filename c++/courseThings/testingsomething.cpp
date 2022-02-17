@@ -1,11 +1,11 @@
 #include <iostream>
 #include <fstream>
-#include <iomanip>
 
-using namespace std;
 
 int main(){
-   int num = 255;
 
+   std::ofstream in("hello.txt");
+   in<<"How are you doing!";
+   std::cout << "Hello, World" << std::endl;
    return 0;
 }
