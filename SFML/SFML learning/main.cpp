@@ -3,7 +3,7 @@
 
 
 int main(){
-    sf::RenderWindow window(sf::VideoMode(600,600), "Over-Powered", sf::Style::Default | sf::Style::Resize | sf::Style::Titlebar);
+    sf::RenderWindow window(sf::VideoMode(600,600), "Manveer-Singh", sf::Style::Default | sf::Style::Resize | sf::Style::Titlebar);
     sf::RectangleShape player(sf::Vector2f(100,100));
     player.setFillColor(sf::Color::Blue);
     player.setOrigin(50,50);
