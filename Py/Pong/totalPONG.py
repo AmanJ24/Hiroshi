@@ -27,6 +27,22 @@ class Scoreboard(Turtle):
         self.r_score += 1 
         self.update_score()  
 
+class Mid_line(Turtle):
+    
+    def __init__(self):
+        super().__init__()
+        self.color("white")
+        self.hideturtle()
+        self.penup()
+        self.goto(0, 300)
+
+    def draw_line(self):
+        self.setheading(270)
+        self.pendown()
+        self.forward(10)
+        self.penup() 
+        self.forward(10)   
+
 class Ball(Turtle):
 
     def __init__(self):
@@ -83,6 +99,7 @@ r_paddle = Paddle((350, 0))
 l_paddle = Paddle((-350, 0))
 ball = Ball()
 score = Scoreboard()
+line = Mid_line()
 
 screen.listen()
 screen.onkey(r_paddle.go_up, "Up")
@@ -95,6 +112,7 @@ is_game_on = True
 while is_game_on:
     screen.update()
     time.sleep(0.001)
+    line.draw_line()
     ball.move()
 
     #Detect collision with the wall

@@ -15,23 +15,28 @@ class Scoreboard(Turtle):
     def __init__(self):
         super().__init__()
         self.score = 0
+        with open("d:/Hiroshi/Py/Snake game/data.txt") as data:
+            self.high_score = int(data.read())
         self.color("white")
         self.penup()
         self.goto(0, 270)
         self.hideturtle()
         self.update_score()
        
-        
     def update_score(self):
-        self.write(f"Score: {self.score}", align = ALIGNMENT, font = FONT)
+        self.clear()
+        self.write(f"Score: {self.score}  High Score: {self.high_score}", align = ALIGNMENT, font = FONT)
 
-    def game_over(self):
-        self.goto(0, 0)
-        self.write("GAME OVER", align = ALIGNMENT, font = FONT)
+    def reset(self):
+        if self.score > self.high_score:
+            self.high_score = self.score
+            with open("d:/Hiroshi/Py/Snake game/data.txt", mode = "w") as data:
+                 data.write(f"{self.high_score}")
+        self.score = 0
+        self.update_score()
 
     def increase_score(self):
         self.score += 1
-        self.clear()
         self.update_score()
 
 class Snake:
@@ -44,6 +49,13 @@ class Snake:
     def create_snake(self):
         for position in STARTING_POSITIONS:
             self.add_segment(position)
+
+    def reset(self):
+        for seg in self.segments:
+            seg.goto(1000, 1000)
+        self.segments.clear()  
+        self.create_snake()
+        self.head = self.segments[0]          
 
     def add_segment(self, position):
         new_segment = Turtle(shape = "square")
@@ -127,14 +139,14 @@ while game_is_on:
 
     #Detect collision with wall.
     if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
-        game_is_on = False
-        scoreboard.game_over()
+        scoreboard.reset()
+        snake.reset()
 
     #Detect collision with tail.    
     for segment in snake.segments[1:]:
        if snake.head.distance(segment) < 10:
-            game_is_on = False
-            scoreboard.game_over()
+           scoreboard.reset()
+           snake.reset()
 
 
 screen.exitonclick()             
