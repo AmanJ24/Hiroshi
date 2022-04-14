@@ -85,8 +85,4 @@ reset.grid(column = 2,row = 3)
 tick = Label(font = (FONT_NAME, 10, "bold"), fg = GREEN, bg = YELLOW) 
 tick.grid(column = 1,row =4)
 
-
-
-
-
 window.mainloop()
