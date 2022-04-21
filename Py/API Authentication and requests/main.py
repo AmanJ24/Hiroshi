@@ -1,10 +1,14 @@
 import requests
+from datetime import datetime
 
 pixela_endpoint = "https://pixe.la/v1/users"
-USERNAME = "aman4498"
+USERNAME = "aman6129"
+TOKEN = "abcdefghijklmnopqrstuvwxyz"
+GRAPH_NAME = "graph1"
+
 
 user_params = {
-    "token": "h21ui3h1h32k1j312",
+    "token": TOKEN,
     "username": USERNAME,
     "agreeTermsOfService": "yes",
     "NotMinor": "yes",
@@ -16,4 +20,45 @@ user_params = {
 
 graph_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs"
 
-requests/post()
+graph_config = {
+    "id": GRAPH_NAME,
+    "name": "Cycling Graph",
+    "unit": "Km",
+    "type": "float",
+    "color": "sora"
+}
+
+headers = {
+    "X-USER-TOKEN": TOKEN
+}
+
+
+# response = requests.post(url = graph_endpoint, json = graph_config, headers = headers)
+
+# print(response.text)
+
+pixel_creation_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_NAME}"
+
+today = datetime.now()
+
+pixel_data = {
+    "date": today.strftime("%Y%m%d"),
+    "quantity": input("How many kilometers did you run today?"),
+}
+
+# response = requests.post(url = pixel_creation_endpoint, json = pixel_data, headers = headers)
+# print(response.text)
+
+update_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_NAME}/20220418"
+
+update_data = {
+    "quantity": "12.75"
+}
+ 
+# response = requests.put(url = update_endpoint, json = update_data, headers = headers)
+# print(response.text)
+
+delete_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_NAME}/20220418"
+
+response = requests.delete(url = delete_endpoint, headers = headers)
+print(response.text)
