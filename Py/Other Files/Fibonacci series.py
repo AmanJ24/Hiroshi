@@ -23,14 +23,20 @@
 # print(sum(new))
 
 
-def score(n): 
+# def score(n): 
 
-    if n == 0:
-        return n
-    else:
-        list = ["0"]
-        for i in range(1, n):
-            list.append("|")
-            list.append(str(i))
-        return eval("".join(list))
-print(score(49))        
+#     if n == 0:
+#         return n
+#     else:
+#         list = ["0"]
+#         for i in range(1, n):
+#             list.append("|")
+#             list.append(str(i))
+#         return eval("".join(list))
+# print(score(49))        
+
+count = []
+for i in range(103, 156):
+    if "5" not in str(i):
+        count.append(i)
+print(len(count))  
