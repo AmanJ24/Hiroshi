@@ -35,8 +35,15 @@
 #         return eval("".join(list))
 # print(score(49))        
 
-count = []
-for i in range(103, 156):
-    if "5" not in str(i):
-        count.append(i)
-print(len(count))  
+# count = []
+# for i in range(103, 156):
+#     if "5" not in str(i):
+#         count.append(i)
+# print(len(count))  
+
+def replace_exclamation(s):
+    # return ["!" if i in ['a', 'e', 'i', 'o', 'u'] else i for i in s.split()]
+    return s.split()
+
+
+print(replace_exclamation('aeious'))    
