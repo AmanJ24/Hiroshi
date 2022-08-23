@@ -41,9 +41,25 @@
 #         count.append(i)
 # print(len(count))  
 
-def replace_exclamation(s):
-    # return ["!" if i in ['a', 'e', 'i', 'o', 'u'] else i for i in s.split()]
-    return s.split()
+# def replace_exclamation(s):
+#     # return ["!" if i in ['a', 'e', 'i', 'o', 'u'] else i for i in s.split()]
+#     return s.split()
 
 
-print(replace_exclamation('aeious'))    
+# print(replace_exclamation('aeious'))    
+
+new = []
+n = int(input())
+for i in range(n):
+    val = input()
+    new.append(val)
+
+for i in new:
+    res = False
+    if i!= '0':
+        try:
+            float(i)
+            res = True
+        except:
+            res = False
+    print(res)           

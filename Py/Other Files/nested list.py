@@ -34,17 +34,51 @@
 # print("abc" is "abc")
 # print("abc" is func("abcd"[:-1]))    
 
-s = "abracadabrra"
-words = [i for i in s]
+# s = "abracadabrra"
+# words = [i for i in s]
 
-first = []
-num = 0
-for i in words:
-    if num % 2 == 0:
-        first.append(i.upper())
-    else:
-        first.append(i.lower())  
-    num += 1      
-print(first)
+# first = []
+# num = 0
+# for i in words:
+#     if num % 2 == 0:
+#         first.append(i.upper())
+#     else:
+#         first.append(i.lower())  
+#     num += 1      
+# print(first)
 
-print(words)
+# print(words)
+
+# import pandas as pd 
+# info = {'Students': ['Aman', "Beauty", "Golden", "Happiness", "Rikita"], 'Marks': [10,20,30,40,50]}
+# data = pd.DataFrame(info)
+
+# data.at[2, 'Students'] = "Love"
+
+# data.iloc[3, 1] = "Lover"
+# print(data)
+
+# n = 73567465519280238573
+
+# count = 1
+# while n > 1:
+#     if n%2 == 0:
+#         n /= 2
+#     elif n%2 != 0:
+#         n = (n*3) + 1
+#     count += 1
+#     print(count)
+
+#73567465519280238573  
+
+
+def bubblesort_once(m):
+    l = [i for i in m if i != max(m)]
+    new = [0]
+    for i in range(len(m)-2): 
+        new.append(max(l[i], l[i+1]))
+        new.append(min(l[i], l[i+1]))
+    new.append(max(m))
+    return new[1::2]
+
+print(bubblesort_once([9, 7, 5, 3, 1, 2, 4, 6, 8]))    
