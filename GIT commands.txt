@@ -1,0 +1,14 @@
+#For adding all the items 
+git add -A
+
+#For committing the items added
+git commit -m "MESSAGE"
+
+#For checking the status 
+git status
+
+#For pushing 
+git push -u origin {repository}
+
+#To clone 
+git clone {repository address}
