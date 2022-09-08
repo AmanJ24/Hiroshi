@@ -55,16 +55,16 @@
 # plt.show()
 
 
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
-# Country = [23, 39, 45, 46, 92]
-# gdp = [45000, 20000, 50000, 43000, 42000]
+Country = [23, 39, 45, 46, 92]
+gdp = [45000, 20000, 50000, 43000, 42000]
 
-# plt.pie(Country, gdp)
-# plt.xlabel('Country')
-# plt.ylabel('GDP')
-# plt.title('Here comes my diagram.')
-# plt.show()
+plt.pie(Country, gdp)
+plt.xlabel('Country')
+plt.ylabel('GDP')
+plt.title('Here comes my diagram.')
+plt.show()
 
 
 # one = "Hello"
@@ -75,6 +75,19 @@
 # five = " "
 # print(five.join(four))
 # print("Well: %s %s %s" % (one, two, three))
+
+
+# def testit(a, b):
+#     # return a*b if a/b > 0.5 else a+b
+#     return a/b > 0.5
+# print(testit(1,3))    
+
+# def factorial(n):
+#     a = 1
+#     for i in range(1, n+1):
+#         a *= i
+#     return a
+# print(factorial(3))    
 
 
 # START:STOP:STEP

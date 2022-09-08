@@ -72,13 +72,14 @@
 #73567465519280238573  
 
 
-def bubblesort_once(m):
-    l = [i for i in m if i != max(m)]
-    new = [0]
-    for i in range(len(m)-2): 
-        new.append(max(l[i], l[i+1]))
-        new.append(min(l[i], l[i+1]))
-    new.append(max(m))
-    return new[1::2]
+# def bubblesort_once(m):
+#     l = [i for i in m if i != max(m)]
+#     new = [0]
+#     for i in range(len(m)-2): 
+#         new.append(max(l[i], l[i+1]))
+#         new.append(min(l[i], l[i+1]))
+#     new.append(max(m))
+#     return new[1::2]
 
-print(bubblesort_once([9, 7, 5, 3, 1, 2, 4, 6, 8]))    
+# print(bubblesort_once([9, 7, 5, 3, 1, 2, 4, 6, 8]))    
+
