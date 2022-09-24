@@ -55,17 +55,34 @@
 # plt.show()
 
 
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
-Country = [23, 39, 45, 46, 92]
-gdp = [45000, 20000, 50000, 43000, 42000]
+# Country = [23, 39, 45, 46, 92]
+# gdp = [45000, 20000, 50000, 43000, 42000]
 
-plt.pie(Country, gdp)
-plt.xlabel('Country')
-plt.ylabel('GDP')
-plt.title('Here comes my diagram.')
-plt.show()
+# plt.pie(Country, gdp)
+# plt.xlabel('Country')
+# plt.ylabel('GDP')
+# plt.title('Here comes my diagram.')
+# plt.show()
 
+class Life():
+    def __init__(self):
+        self.remembrance = "April 24"
+        self.student = True
+        self.coder = True
+        self.skills = {
+            "HTML": True,
+            "CSS": ["Bootstrap 4", "Bootstrap 5"], 
+            "JS": ["NodeJS", "JQuery"], 
+            "Python": True,
+            }
+
+    def accounts(self):
+        self.discord = "Phoenix_Code #7224" 
+        self.github = "https://github.com/AmanJ24"
+        self.codewars = "https://www.codewars.com/users/AmanJ24"
+        self.monkeytype = "https://monkeytype.com/profile/zjfmjr5ZeCdJocgc32iirXJqkzz1"
 
 # one = "Hello"
 # two = "My Name"
