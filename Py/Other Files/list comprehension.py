@@ -66,23 +66,23 @@
 # plt.title('Here comes my diagram.')
 # plt.show()
 
-class Life():
-    def __init__(self):
-        self.remembrance = "April 24"
-        self.student = True
-        self.coder = True
-        self.skills = {
-            "HTML": True,
-            "CSS": ["Bootstrap 4", "Bootstrap 5"], 
-            "JS": ["NodeJS", "JQuery"], 
-            "Python": True,
-            }
+# class Life():
+#     def __init__(self):
+#         self.remembrance = "April 24"
+#         self.student = True
+#         self.coder = True
+#         self.skills = {
+#             "HTML": True,
+#             "CSS": ["Bootstrap 4", "Bootstrap 5"], 
+#             "JS": ["NodeJS", "JQuery"], 
+#             "Python": True,
+#             }
 
-    def accounts(self):
-        self.discord = "Phoenix_Code #7224" 
-        self.github = "https://github.com/AmanJ24"
-        self.codewars = "https://www.codewars.com/users/AmanJ24"
-        self.monkeytype = "https://monkeytype.com/profile/zjfmjr5ZeCdJocgc32iirXJqkzz1"
+#     def accounts(self):
+#         self.discord = "Phoenix_Code #7224" 
+#         self.github = "https://github.com/AmanJ24"
+#         self.codewars = "https://www.codewars.com/users/AmanJ24"
+#         self.monkeytype = "https://monkeytype.com/profile/zjfmjr5ZeCdJocgc32iirXJqkzz1"
 
 # one = "Hello"
 # two = "My Name"
@@ -105,6 +105,15 @@ class Life():
 #         a *= i
 #     return a
 # print(factorial(3))    
+
+
+# import matplotlib.pyplot as plt
+
+# num = [10, 39, 29, 19, 11, 13]
+
+# plt.pie(num)
+
+# plt.show()
 
 
 # START:STOP:STEP
