@@ -115,6 +115,20 @@
 
 # plt.show()
 
+def interlockable(a, b):
+    A = bin(a)
+    B = bin(b)
+    for i in range(max(len(A), len(B))):
+        if A[::-1][i] == "1":
+            if A[::-1][i] == B[::-1][i]:
+                return False
+    return True
+
+# print(bin(9), bin(4))
+print(interlockable(3, 6))
+
+
+
 
 # START:STOP:STEP
 # 0: -1: 1
