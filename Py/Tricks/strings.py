@@ -57,24 +57,6 @@ class Person:
 
 
 #------------------------------------------------
-
-#injecting a value in a list inbetween automatically
-
-import bisect
-
-a = [3, 5, 9, 11, 20]
-
-value = 7
-idx = bisect.bisect(a, value)
-print(idx) 
-#O/P --> 2
-
-a.insert(idx, value)
-print(a)
-#O/P --> [3, 5, 7, 9, 10, 11, 20]
-
-#------------------------------------------------
-
 #No Private methods
 
 class User:
