@@ -69,8 +69,6 @@ user.__foo()
 #O/P --> raises an AttributeError
 
 user._User__foo()
-#O/P --> Name mangling, and it works 
+# O/P --> Name mangling, and it works 
 
 #------------------------------------------------
-
-
