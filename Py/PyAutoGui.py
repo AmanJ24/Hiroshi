@@ -1,13 +1,13 @@
-# # import pyautogui as pyy
-# # import time
+import pyautogui as pyy
+import time
 
 
 
-# # time.sleep(4)
+time.sleep(4)
 
-# # for i in range(len('BEST OF LUCK!!!')):
-# #     pyy.typewrite('BEST OF LUCK!!!'[:i+1]+ '\n')
-
+for i in range(100):
+    pyy.typewrite('SEND ME THE PHOTOS!!!')
+    pyy.press('enter')
 
 
 # # count = 0

@@ -4,7 +4,7 @@ import pandas
 screen = turtle.Screen()
 screen.title("US States Game")
 
-image = "blank_img.gif"
+image = "./blank_img.gif"
 screen.addshape(image)
 turtle.shape(image)
 screen.screensize(200, 200)
@@ -13,7 +13,7 @@ writer = turtle.Turtle()
 writer.penup()
 writer.hideturtle()
 
-data = pandas.read_csv("50_states.csv")
+data = pandas.read_csv("./50_states.csv")
 
 is_game_on = True
 Correct_count = 0

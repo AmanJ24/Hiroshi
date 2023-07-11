@@ -9,5 +9,5 @@ d = [25, 35, 45, 55]
 
 data = {"Hindi": a, "English": b, "Maths": c, "Science": d}
 
-df = Dataframe(data, index = ["Aman", "Naman", "Kartik", "Hridyansh"])
+df = DataFrame(data, index = ["Aman", "Naman", "Kartik", "Hridyansh"])
 print(df)

@@ -68,6 +68,8 @@ stages = ['''
 =========
 ''']
 
+word_list = ['Aman', 'Naman', 'Hello', 'World']
+
 chosen_word = random.choice(word_list)
 
 display = []
