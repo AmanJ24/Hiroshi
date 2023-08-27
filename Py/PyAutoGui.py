@@ -5,9 +5,15 @@ import time
 
 time.sleep(4)
 
-for i in range(100):
-    pyy.typewrite('SEND ME THE PHOTOS!!!')
-    pyy.press('enter')
+for i in range(31):
+    pyy.hotkey('ctrl', 'c')
+    pyy.hotkey('alt', 'tab')
+    pyy.hotkey('ctrl', 'v')
+    pyy.hotkey('alt', 'tab')
+    pyy.press('down')
+
+
+    # pyy.press('enter')
 
 
 # # count = 0
@@ -74,12 +80,12 @@ for i in range(100):
 
 
 
-import pandas as pd
+# import pandas as pd
 
-a = [1,2,3,4,5,None]
-b = [1,None,3,4,5,None]
+# a = [1,2,3,4,5,None]
+# b = [1,None,3,4,5,None]
 
-c = pd.Series(a)
-d = pd.Series(b)
+# c = pd.Series(a)
+# d = pd.Series(b)
 
-print(c+d)
+# print(c+d)
