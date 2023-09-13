@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
 
-    long something = 7297804345;
+    long something = 7297;
     short length = 0;
     for (size_t i = 0; something > 0; length++)
     {
