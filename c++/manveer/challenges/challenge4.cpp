@@ -5,7 +5,7 @@
 
 int main(){
 	std::string alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	std::string key = "vnjsjdfsjfwerowievrnowiebriewpqwierxmqpwoerwevrioewo";
+	std::string key = "vnjsjdfsjfwerowievrnowiebriewpqwierxmqpwoerwevrioewovn"; 
 
 
 	std::cout << "Enter your password with no space which i will encrypt: ";
@@ -21,7 +21,6 @@ int main(){
 		{
 			if(password[i] == alphabet[j])
 			{
-				// cout << key.at(j) << endl;
 				password[i] = key[j];
 				break;
 			}
@@ -30,20 +29,19 @@ int main(){
 	}
 
 
-	//nah bro isn't working
+	std::cout << "--------------------------------------------" << std::endl;
 	//to decrypt this encrypted password
-	/* std::string decrypted_password; */
-	/* for(int i = 0; i < password.length(); i++){ */
-	/* 	for(int j = 0; j < key.length(); j++){ */
-	/* 		if(password[i] == key[j]){ */
-	/* 			decrypted_password += alphabet[j]; */
-	/* 			break; */
-	/* 		} */
-	/* 	} */
-	/* } */
+	std::string decrypted_password;
+	for(int i = 0; i < password.length(); i++){
+		for(int j = 0; j < key.length(); j++){
+			if(password[i] == key[j]){
+				break;
+			}
+		}
+	}
 
-	std::cout << password << std::endl;
-	std::cout << decrypted_password << std::endl;
+	std::cout << "encrypted password: " << password << std::endl;
+	std::cout << "decrypted password: " << decrypted_password << std::endl;
 
     /* cout << "This is your encrypted password: "<< password << endl; */
     /* password = temp_password; */
