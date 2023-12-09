@@ -132,11 +132,12 @@ int main(){
 	int number {0};
 	change_number_to_100(&number);
 	std::cout << number << std::endl;
-
+	std::cout << "HELLO WORLD" << std::endl;
 	
 	//static variable test
 	how_many_time_loop();
 	how_many_time_loop();
+	std::cout << "HELLO WORLD" << std::endl;
 	return 0;
 }
 
