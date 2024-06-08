@@ -1,0 +1,11 @@
+4:30,30,Price Loader
+3:30,15,Load Transactions
+8:30,90,Balance Sheet
+1:30,50,Web Refresh
+15:00,20,Transaction Validator
+18:00,30,Batch Process
+19:14,16,Batch Report
+22:10,30,Transaction Preprocess
+21:00,30,Nightly Refresh
+22:30,15,Batch Cleanup
+10:30,15,Schedule Distrubution
