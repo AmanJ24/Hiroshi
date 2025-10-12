@@ -1,0 +1,1 @@
+font = (FONT_NAME, 10, "bold")
